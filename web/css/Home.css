@@ -1,0 +1,74 @@
+/* El botón crece con la ventana, pero no baja de 50 px. */
+#sidebar-btn{
+    width: 12vw;
+    height: 12vw;
+    min-width: 50px;
+    min-height: 50px;
+
+    /* Centra el icono dentro del botón. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    line-height: 1;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    padding: 0;
+    border: 4px solid black;
+    background: #f4f4f4;
+    cursor: pointer;
+
+    z-index: 1000; /* Mantiene el botón por encima del panel lateral. */
+}
+
+/* Al abrir el menú, el botón se desplaza y pierde el recuadro. */
+#sidebar-btn.sidebar-btn-open{
+  left: 340px;
+  top: -40px;
+  border: none;
+  background: transparent;
+}
+
+/* JavaScript alterna la visibilidad del panel al pulsar el botón. */
+#sidebar-menu {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  /* Ocupa toda la altura y una parte del ancho de la ventana. */
+  width: 45vw;
+  min-width: 200px;
+  height: 100vh;
+  
+  padding-top: 70px;
+  
+  z-index: 500; /* Por debajo del botón y por encima del contenido. */
+
+  background-color: #f4f4f4;
+}
+
+/* Cada enlace ocupa una línea y se muestra dentro de su propio recuadro. */
+#sidebar-menu a {
+    display: block;
+    padding: 30px;
+    margin: 5px;
+
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: #ffbd59;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    font-size: 48px;
+
+    color: black;
+}
+
+body{
+    margin: 0;
+    background-color: #ffbd59;
+}
