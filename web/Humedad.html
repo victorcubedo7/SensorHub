@@ -1,0 +1,96 @@
+<!--
+  Autor: Victor Cubedo
+  Descripción: pagina usada para el sensor de humedad
+-->
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SensorHub</title>
+
+  <meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+  
+ <link rel="stylesheet" href="css/Home.css">
+ <link rel="stylesheet" href="css/Sensor.css">
+
+  
+</head>
+
+<body>
+
+  <button id="sidebar-btn" 
+    onclick="toggleSidebarMenu()">
+  ☰
+  </button>
+
+  <div class="sensor-page">
+        <div class="sensor-box"> 
+                <div class="sensor-header">
+                    <h3>Humedad</h3>
+
+                    <div class="sensor-status">
+                        <span>Estado</span>
+                        <div class="status-indicator"></div>
+                    </div>
+                </div>    
+
+                <div class="sensor-row">
+                    <span class="sensor-label">Última lectura</span>
+                    <span class="sensor-value">47.3 %</span>
+                </div>    
+
+                 <div class="sensor-row">
+                    <span class="sensor-label">Última medida: </span>
+                    <span class="sensor-value">18/10/2026 15:45</span>
+                </div>  
+
+                 <div class="sensor-row">
+                    <span class="sensor-label">ESP32</span>
+                    <span class="sensor-value">ESP-001 192.168.1.100</span>
+                </div>  
+
+                 <div class="sensor-row">
+                    <span class="sensor-label">Tipo sensor</span>
+                    <span class="sensor-value">Capacitivo</span>
+                </div>  
+
+                <!-- GRAFICA DE HUMEDAD -->
+                
+                <h2>Gráfica de Humedad</h2>
+
+                <div class="graph-controls">
+
+                    <button id="btn1h">1 h</button>
+                    <button id="btn12h">12 h</button>
+                    <button id="btn1d">1 dia</button>
+                    <button id="btn1s">1 sem</button>
+                    
+                        
+                </div>
+
+                <div class="graph-container">
+                     <canvas id="humidityChart"></canvas>
+                </div>
+
+        </div>
+   </div>
+  
+  <div id="sidebar-menu">
+    <a href="Home.html">Home</a>
+    <a href="Ajustes.html">Ajustes</a>
+    <a href="Humedad.html">Humedad</a>
+  </div> 
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/Random_data_chart.js"></script>
+<script src="js/sidebar_menu.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+ /* 
+  Autor: Victor Cubedo
+  Descripción: css para cada sensor que se cree
+*/
+
+.sensor-page{
+    padding: 5rem 1rem 1rem 1rem;
+}
+
+.sensor-box{
+    background-color: #f4f4f4;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+     
+}
+
+.sensor-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-indicator{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: green;
+    border: 0.1rem solid black;
+}
+
+.sensor-status{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+}
+
+.sensor-data{
+    margin-top: 1.5rem;
+}
+
+.sensor-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 0.05rem solid #999;
+}
+
+.sensor-label{
+    font-weight: bold;
+}
+
+.sensor-value{
+    font-weight: bold;
+    text-align: right;
+}
+
+.graph-controls{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.graph-controls button{
+    padding: 0.5rem 0.8rem;
+
+    border: 0.1rem solid black;
+    border-radius: 0.4rem;
+
+    background-color: white;
+
+    font-size: 0.9rem;
+}
+
+.graph-container{
+    height: 18rem;
+
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+
+    background-color: white;
+
+    padding: 0.5rem;
+}
