@@ -1,3 +1,9 @@
+ /* 
+  Autor: Victor Cubedo
+  Version: v0.0.1.17102026
+  Descripción: css para el menú lateral de la web y HOME
+*/
+
 /* El botón crece con la ventana, pero no baja de 50 px. */
 #sidebar-btn{
     width: 12vw;

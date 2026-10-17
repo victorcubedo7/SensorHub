@@ -1,3 +1,7 @@
+//   Autor: Victor Cubedo
+//  Version: v0.0.1.17102026
+//  Descripción: Archivo JS para el menú lateral de la web.
+
 function toggleSidebarMenu() {
 
     let menu = document.getElementById("sidebar-menu");
